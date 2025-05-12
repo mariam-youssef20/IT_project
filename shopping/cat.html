@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cat Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Shop for Cats 🐱</h1>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="persian.png" alt="Persian Cat" />
+      <h3>Persian Cat</h3>
+      <p>$400</p>
+      <button onclick="addToCart('Persian Cat')">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Siamese.png" alt="Siamese Cat" />
+      <h3>Siamese Cat</h3>
+      <p>$350</p>
+      <button onclick="addToCart('Siamese Cat')">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="tuna.png" alt="Cat Food" />
+      <h3>Cat Food - Tuna Flavor</h3>
+      <p>$15</p>
+      <button onclick="addToCart('Cat Food')">Add to cart</button>
+    </div>
+  </div>
+
+  <script>
+    function addToCart(itemName) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(itemName);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(itemName + " added to cart!");
+    }
+  </script>
+</body>
+</html>

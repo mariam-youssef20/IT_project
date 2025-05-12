@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Shop</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+<div class="navbar">
+        <div class="nav-links">
+            <img id="logo" src="Logo.jpg" alt="Museum Logo">
+            <div class="dropdown">
+                <a href="../home/home_html.html" >Animals</a>
+                <div class="dropdown-content">
+                  <a href="../invertablate/invertebrate.html" >Invertebrates</a>
+                  <a href="../reptailes/Reptiles.html" >Reptiles</a>
+                  <a href="../mammals/mammals.html">Mammals</a>
+                  <a href="../amphabianes/amphabianes.html" >Amphibians</a>
+                  
+                  <a href="../login/index.html" >Birds</a>
+                  <a href="../login/indexinsects.html" >Insects</a>
+                </div>
+            </div>
+            <a href="adopt.html" >Adopt</a>
+            <a href="../home/museum_html.html" >Museum</a>
+            <a href="shop.html" >Shopping</a>
+        </div>
+  
+    <div class="right-links">
+      <button id="moodChangeBtn">Change Mode</button>
+      <a href="../login/indexlogin.html" class="top-link">Login</a>
+    </div>
+  </div>
+
+
+
+  <header>
+    <div class="header-text">
+      <h1>Everything your pet need</h1>
+      <p>Toys, food, grooming & more</p>
+      <button id="shopNowBtn" class="shop-now">Shop now</button>
+    </div>
+    <img src="dog.png"/>
+  </header>
+
+  <section class="categories">
+    <h2>Shop by category</h2>
+    <div class="category-grid">
+      <a href="dog.html" class="category dog"> 
+        <img src="doglogo.png"/>
+        Dog</a>
+      <a href="cat.html" class="category cat">
+        <img src="catlogoo.png"/>
+        Cat</a>
+      <a href="fish.html" class="category fish">
+        <img src="fishlogo (2).png"/>
+        Fish</a>
+      <a href="bird.html" class="category bird">
+        <img src="birdlogo.png"/>
+        Bird</a>
+    </div>
+  </section>
+
+  <section class="sale">
+    <h2>SALE!!</h2>
+    <div class="sale-container">
+
+      <div class="sale-box">
+        <img src="salefood.png" />
+        <p>20% off Dog food</p>
+        <button class="add-to-cart" onclick="addToCart('20% off Dog food')">Add to cart</button>
+      </div>
+
+      <div class="sale-box">
+        <img src="salecatfood.png" />
+        <p>15% off Cat food</p>
+        <button class="add-to-cart" onclick="addToCart('15% off Cat food')">Add to cart</button>
+      </div>
+
+      <div class="sale-box">
+        <img src="petbox.png" />
+        <p>Buy 1 Get 1 Free box</p>
+        <button class="add-to-cart" onclick="addToCart('Buy 1 Get 1 Free box')">Add to cart</button>
+      </div>
+
+    </div>
+  </section>  
+
+  <footer class="footer">
+    <a href="cart.html" class="cart-btn">Your cart</a>      
+    <div class="shipping">
+      <img src="plane.png" width="24" />
+      Shipping all over world
+    </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2025 Adopt a Pet. All rights reserved.</p>
+   
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

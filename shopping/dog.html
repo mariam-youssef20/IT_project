@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Shop for Dogs 🐶</h1>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="golden.png" alt="Golden Retriever" />
+      <h3>Golden Retriever</h3>
+      <p>$500</p>
+      <button onclick="addToCart('Golden Retriever')">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="german.png" alt="German Shepherd" />
+      <h3>German Shepherd</h3>
+      <p>$600</p>
+      <button onclick="addToCart('German Shepherd')">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="food.png" alt="Dog Food" />
+      <h3>Dog Food - Beef Flavor</h3>
+      <p>$20</p>
+      <button onclick="addToCart('Dog Food')">Add to cart</button>
+    </div>
+  </div>
+  <script>
+    function addToCart(itemName) {
+    
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+      cart.push(itemName);
+  
+      localStorage.setItem('cart', JSON.stringify(cart));
+  
+      alert(itemName + " added to cart!");
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,286 @@
+body {
+  padding: 20px;
+  font-family:Arial, Helvetica, sans-serif sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  margin-left: 650px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+  transition: transform 0.5s ease;
+}
+
+#logo:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.nav-links a,
+.adoptaion,
+.top-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover,
+.top-link:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: black;
+}
+body.dark-mode .dropdown-content a{
+  color : white ;
+  background-color: black;
+} 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* أنماط شريط البحث */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#searchInput {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 200px;
+  transition: width 0.3s;
+}
+
+#searchInput:focus {
+  width: 250px;
+  outline: none;
+  border-color: #00d4ff;
+}
+
+#searchBtn {
+  padding: 8px 15px;
+  margin-left: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#searchBtn:hover {
+  background-color: #45a049;
+}
+
+#searchSuggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+}
+
+#searchSuggestions div {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#searchSuggestions div:hover {
+  background-color: #f5f5f5;
+}
+
+body.dark-mode #searchInput {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+body.dark-mode #searchSuggestions {
+  background: #333;
+  border-color: #555;
+}
+
+body.dark-mode #searchSuggestions div {
+  color: white;
+}
+
+body.dark-mode #searchSuggestions div:hover {
+  background-color: #444;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #2c5364;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.social {
+  width: 180px;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+.social:hover {
+  transform: scale(1.1);
+}
+
+.rev{
+  cursor: pointer;
+}
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, #232526, #414345);
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .top-link {
+  color: white;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .top-link:hover {
+  color: #00f2ff;
+}
+
+body.dark-mode button {
+  background-color: #444;
+}
+
+body.dark-mode button:hover {
+  background-color: #666;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+}
+
+body.dark-mode footer {
+  background-color: #111;
+}

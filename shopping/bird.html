@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bird Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Shop for Birds 🐦</h1>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="parrot.png" alt="Parrot" />
+      <h3>Green Parrot</h3>
+      <p>$120</p>
+      <button onclick="addToCart('Green Parrot')">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="canary.png" alt="Canary" />
+      <h3>Yellow Canary</h3>
+      <p>$90</p>
+      <button onclick="addToCart('Yellow Canary')">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="birdfood.png" alt="Bird Food" />
+      <h3>Bird Seed Mix</h3>
+      <p>$10</p>
+      <button onclick="addToCart('Bird Food')">Add to cart</button>
+    </div>
+  </div>
+
+  <script>
+    function addToCart(itemName) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(itemName);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(itemName + " added to cart!");
+    }
+  </script>
+</body>
+</html>
