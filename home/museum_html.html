@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="museumPageHtmlTitle">Natural History - Museum</title>
+    <link rel="stylesheet" href="styles_css.css">
+    <link rel="stylesheet" href="museum_css.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-links">
+            <img id="logo" src="logo_projectIT.jpg" alt="Museum Logo">
+            <div class="dropdown">
+                <a href="home_html.html" class="active" data-i18n="home">Animals</a>
+                <div class="dropdown-content">
+                  <a href="../invertablate/invertebrate.html" data-i18n="dropdownInvertebrates">Invertebrates</a>
+                  <a href="../reptailes/Reptiles.html" data-i18n="dropdownReptiles">Reptiles</a>
+                  <a href="../mammals/mammals.html" data-i18n="dropdownMammals">Mammals</a>
+                  <a href="../amphabianes/amphabianes.html" data-i18n="dropdownAmphibians">Amphibians</a>
+                  
+                  <a href="../login/index.html" data-i18n="dropdownBirds">Birds</a>
+                  <a href="../login/indexinsects.html" data-i18n="dropdownInsects">Insects</a>
+                </div>
+            </div>
+            <a href="../shopping/adopt.html" class="adoption" data-i18n="adopt">Adopt</a>
+            <a href="museum_html.html" data-i18n="museum">Museum</a>
+            <a href="../shopping/shop.html" data-i18n="shopping">Shopping</a>
+        </div>
+        <div class="right-links">
+            
+            <button id="languageToggle">العربية</button>
+            <button id="moodChangeBtn" data-i18n="changeModeBtn">Change Mode</button>
+            <a href="../login/indexlogin.html" class="top-link" data-i18n="login">Login</a>
+            
+        </div>
+    </div>
+    <main class="container">
+        <h1 class="page-title" data-i18n="museumMainTitle">MUSEUM</h1>
+        <h2 class="subtitle" data-i18n="museumSubtitle">The museum shows some of Extinct animals</h2>
+        
+        <div class="extinct-animals">
+            <!-- Tyrannosaurus Card -->
+            <div class="animal-card">
+                <div class="animal-image-container">
+                    <img src="Tyrannosaurus_projectIT.png" alt="Tyrannosaurus" class="animal-image">
+                </div>
+                <div class="animal-info">
+                    <h3 class="animal-title" data-i18n="tyrannosaurusTitle">Tyrannosaurus</h3>
+                    <p data-i18n="tyrannosaurusDesc1">Tyrannosaurus is a 
+                        <strong>genus</strong> of large <a href="https://en.wikipedia.org/wiki/Theropoda" class="info-link">theropod</a> dinosaur.</p>
+                    <p data-i18n="tyrannosaurusDesc2">The <strong>type species</strong> 
+                        Tyrannosaurus rex often shortened to colloquially T-Rex, is one of the best represented theropods. It lived throughout what is now western North America, on what was then an island continent known as 
+                        <a href="https://en.wikipedia.org/wiki/Laramidia" class="info-link">Laramidia</a>.</p>
+                    
+                    <p data-i18n="tyrannosaurusDesc3">Tyrannosaurus had a much wider range than other 
+                        <a href="https://en.wikipedia.org/wiki/Tyrannosauridae" class="info-link">tyrannosaurids</a>
+                        . Fossils are found in a variety of 
+                        <a href="https://en.wikipedia.org/wiki/List_of_dinosaur-bearing_rock_formations" class="info-link">geological formations</a> 
+                        dating to the latest 
+                        <a href="https://en.wikipedia.org/wiki/Campanian" class="info-link">Campanian-Maastrichtian</a> 
+                        ages of the late 
+                        <a href="https://en.wikipedia.org/wiki/Campanian" class="info-link">Cretaceous period</a>
+                        , 72.7 to 66 million years ago, with isolated specimens possibly indicating an earlier origin in the middle Campanian. It was the last known member of the tyrannosaurids and among the last non-avian dinosaurs to exist before the 
+                        <a href="https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event" class="info-link">Cretaceous–Paleogene extinction event</a>.</p>
+                </div>
+            </div>
+            
+            <!-- Fun Fact Box -->
+            <div class="fact-box">
+                <h4 data-i18n="funFactTitle">Fun Fact:</h4>
+                <p data-i18n="funFactDesc">Due to these animals and the past living organisms they are buried for millions of years and they turn into fossil fuel which is used as a source of energy</p>
+            </div>
+            
+            <!-- Mammoth Card -->
+            <div class="animal-card">
+                <div class="animal-image-container">
+                    <img src="mymous_projectIT.png" alt="Mammoth" class="animal-image">
+                </div>
+                <div class="animal-info">
+                    <h3 class="animal-title" data-i18n="mammothTitle">Mammoth</h3>
+                    <p data-i18n="mammothDesc1">Mammoth lived from the late 
+                        <a href="https://en.wikipedia.org/wiki/Miocene" class="info-link">Miocene</a> 
+                        epoch (from around 6.2 million years ago) into the 
+                        <a href="https://en.wikipedia.org/wiki/Holocene" class="info-link">Holocene</a> 
+                        until about 4,000 years ago, with mammoth species at various times inhabiting Africa, Asia, Europe, and North America.</p>
+                    
+                    <p data-i18n="mammothDesc2">Mammoths are distinguished from living 
+                        <a href="https://en.wikipedia.org/wiki/Elephant" class="info-link">elephants</a>
+                         by their spirally twisted tusks and in some later species, the development of numerous adaptations to living in cold environments, including a thick layer of fur.</p>
+                    
+                    <p data-i18n="mammothDesc3">Mammoth lived from the late Miocene epoch (from around 6.2 million years ago) into the Holocene until about 4,000 years ago, with mammoth species at various times inhabiting Africa, Asia, Europe, and North America. Mammoths are distinguished from living elephants by their spirally twisted tusks and in some later species, the development of numerous adaptations to living in cold environments, including a thick layer of fur.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="contact-us" data-i18n="footerContactUs">Contact us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon email-icon"></a>
+                <a href="#" class="social-icon facebook-icon"></a>
+                <a href="#" class="social-icon instagram-icon"></a>
+                <a href="#" class="social-icon twitter-icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

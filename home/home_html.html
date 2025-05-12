@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageHtmlTitle">Natural History - Home</title>
+    <link rel="stylesheet" href="styles_css.css">
+    <link rel="stylesheet" href="home_css.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-links">
+            <img id="logo" src="logo_projectIT.jpg" alt="Museum Logo">
+            <div class="dropdown">
+                <a href="home_html.html" class="active" data-i18n="home">Animals</a>
+                <div class="dropdown-content">
+                  <a href="../invertablate/invertebrate.html" data-i18n="dropdownInvertebrates">Invertebrates</a>
+                  <a href="../reptailes/Reptiles.html" data-i18n="dropdownReptiles">Reptiles</a>
+                  <a href="../mammals/mammals.html" data-i18n="dropdownMammals">Mammals</a>
+                  <a href="/amphabianes/amphabianes.html" data-i18n="dropdownAmphibians">Amphibians</a>
+                  
+                  <a href="../login/index.html" data-i18n="dropdownBirds">Birds</a>
+                  <a href="../login/indexinsects.html" data-i18n="dropdownInsects">Insects</a>
+                </div>
+            </div>
+            <a href="../shopping/adopt.html" class="adoption" data-i18n="adopt">Adopt</a>
+            <a href="museum_html.html" data-i18n="museum">Museum</a>
+            <a href="../shopping/shop.html" data-i18n="shopping">Shopping</a>
+        </div>
+        <div class="right-links">
+            
+            <button id="languageToggle">العربية</button>
+            <button id="moodChangeBtn" data-i18n="changeModeBtn">Change Mode</button>
+            <a href="../login/indexlogin.html" class="top-link" data-i18n="login">Login</a>
+            
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title" data-i18n="pageTitle">Animals</h1>
+        
+        <div class="animals-grid">
+            <!-- Left Column -->
+            <div class="info-column">
+                <h3 class="info-title" data-i18n="animalFeatures">Animals have different body features that help them survive in their environments.</h3>
+                <p data-i18n="animalFeaturesDesc">For example, camels have long eyelashes and wide feet to protect them from sand and heat, while penguins have thick feathers and fat to stay warm in icy places.</p>
+            </div>
+            
+            <!-- Center Image -->
+            <div class="center-image-container">
+                <img src="animals.png" alt="Various animals" class="center-image">
+            </div>
+            
+            <!-- Right Column -->
+            <div class="info-column">
+                <h3 class="info-title" data-i18n="animalBehavior">Animals act differently based on where they live.</h3>
+                <p data-i18n="animalBehaviorDesc">Some animals, like bats, are active at night to stay cool or avoid predators, while others, like bears, hibernate during winter to save energy when food is hard to find.</p>
+            </div>
+        </div>
+        
+        <!-- Additional Information -->
+        <div class="info-box">
+            <h3 class="info-subtitle" data-i18n="habitats">They also live in different habitats depending on what they need to survive.</h3>
+            <p data-i18n="habitatsDesc">Monkeys live in trees where they can find fruits and swing from branches, while dolphins live in oceans and use their fins to swim and catch fish.</p>
+        </div>
+
+        <!-- Review Button -->
+        <div class="review-container">
+            <a href="review.html" class="review-link" data-i18n="reviewLink">Review</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="contact-us" data-i18n="contactUs">Contact us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon email-icon"></a>
+                <a href="#" class="social-icon facebook-icon"></a>
+                <a href="#" class="social-icon instagram-icon"></a>
+                <a href="#" class="social-icon twitter-icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

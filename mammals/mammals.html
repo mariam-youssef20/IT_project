@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mammals</title> <!-- This title might need a data-i18n attribute if it needs to be dynamic -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- New Navbar from test.html -->
+   <div class="navbar">
+        <div class="nav-links">
+            <img id="logo" src="WhatsApp_Image_2025-04-20_at_16.32.12_3ce93a65-removebg-preview.png" alt="Museum Logo">
+            <div class="dropdown">
+                <a href="../home/home_html.html" class="active" data-i18n="home">Animals</a>
+                <div class="dropdown-content">
+                  <a href="../invertablate/invertebrate.html" data-i18n="dropdownInvertebrates">Invertebrates</a>
+                  <a href="../reptailes/Reptiles.html" data-i18n="dropdownReptiles">Reptiles</a>
+                  <a href="mammals.html" data-i18n="dropdownMammals">Mammals</a>
+                  <a href="../amphabianes/amphabianes.html" data-i18n="dropdownAmphibians">Amphibians</a>
+                  
+                  <a href="../login/index.html" data-i18n="dropdownBirds">Birds</a>
+                  <a href="../login/indexinsects.html" data-i18n="dropdownInsects">Insects</a>
+                </div>
+            </div>
+            <a href="../shopping/adopt.html" class="adoption" data-i18n="adopt">Adopt</a>
+            <a href="../home/museum_html.html" data-i18n="museum">Museum</a>
+            <a href="../shopping/shop.html" data-i18n="shopping">Shopping</a>
+        </div>
+        <div class="right-links">
+            <button id="languageToggle">العربية</button> <!-- Will be updated by JS -->
+            <button id="moodChangeBtn" data-i18n="changeModeBtn">Dark Mode</button> <!-- Will be updated by JS -->
+            <a href="login.html" class="top-link" data-i18n="login">Login</a>
+            
+        </div>
+    
+    </div>
+
+  <main>
+    <h1 data-i18n="pageTitle">MAMMALS</h1>
+
+    <section class="animal">
+      <img src="OIP.jpg" alt="Tiger" />
+      <div>
+        <h2 data-i18n="tigerTitle">TIGER</h2>
+        <p data-i18n="tigerDesc">The tiger (Panthera tigris) is the largest member of the cat family and a powerful carnivorous mammal. It is known for its orange fur with black stripes, strong body, and sharp teeth and claws. Tigers are solitary hunters and are mainly found in forests across Asia. As mammals, tigers give birth to live young and nurse them with milk. They are an endangered species due to habitat loss and poaching.</p>
+      </div>
+    </section>
+
+    <section class="animal">
+      <img src="OIP (2).jpg" alt="Horse" />
+      <div>
+        <h2 data-i18n="horseTitle">HORSE</h2>
+        <p data-i18n="horseDesc">The horse (Equus ferus caballus) is a large, strong mammal known for its speed and endurance. Horses have been domesticated for thousands of years and are used for riding, work, and sport. As mammals, they give birth to live young and feed them with milk. Horses have hooves, long legs, and usually live in herds.</p>
+      </div>
+    </section>
+
+    <section class="animal">
+      <img src="OIP (1).jpg" alt="Wolf" />
+      <div>
+        <h2 data-i18n="wolfTitle">WOLF</h2>
+        <p data-i18n="wolfDesc">The wolf (Canis lupus) is a wild carnivorous mammal and the largest member of the dog family. Wolves live and hunt in packs, showing strong teamwork and communication. They have thick fur, sharp teeth, and are known for their howling. Like all mammals, wolves give birth to live young and nurse them with milk.</p>
+      </div>
+    </section>
+
+    <section class="animal">
+      <img src="oiph.webp" alt="Elephant" />
+      <div>
+        <h2 data-i18n="elephantTitle">ELEPHANT</h2>
+        <p data-i18n="elephantDesc">The elephant is the largest land mammal on Earth. There are two main types: African and Asian elephants. They are known for their long trunks, big ears, and tusks. Elephants are intelligent and social animals that live in groups. As mammals, they give birth to live young and feed them with milk.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p data-i18n="contact">Contact Us</p>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.webp" alt="Facebook" /></a>
+        <a href="#"><img src="Gmail.png" alt="Email" /></a>
+        <a href="#"><img src="insta.png" alt="Instagram" /></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scriptss.js"></script>
+</body>
+</html>

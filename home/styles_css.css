@@ -1,0 +1,354 @@
+/* =========================================
+   Common Styles for All Pages
+   ========================================= */
+
+/* Reset and Base Styles */
+
+
+body {
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+h1{
+    margin-left: 41.8;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #558b2f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    
+    transition: background-color 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+   
+    transition: transform 0.5s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05)rotate(-5deg);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+    transform: scale(1.05);
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+
+.right-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.top-link:hover {
+    color: #00d4ff;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Common Page Elements */
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #558b2f;
+    padding-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    transition: background-color 0.3s;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social-icon:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+.email-icon {
+    background-image: url('email.jpg');
+}
+
+.facebook-icon {
+    background-image: url('fackbook.jpg');
+}
+
+.instagram-icon {
+    background-image: url('instgram.jpg');
+}
+
+.twitter-icon {
+    background-image: url('twitter.jpg');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .right-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 16px;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-us {
+        font-size: 1.3rem;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background: linear-gradient(90deg, #232526, #414345);
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .top-link {
+     color: white;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .top-link:hover {
+    color: #00f2ff;
+}
+body.dark-mode button {
+    background-color: #444;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
+
+body.dark-mode .page-title {
+    color: #f5f5f5;
+    border-bottom-color: #7cb342;
+}
+
+body.dark-mode .subtitle {
+    color: #bbb;
+}
+
+body.dark-mode footer {
+    background-color: #111;
+}
+
+body.dark-mode .social-icon {
+    background-color: #444;
+}
+
+body.dark-mode .social-icon:hover {
+    background-color: #555;
+}
+body.dark-mode .dropdown-content {
+    background-color: #333;
+}
+
+body.dark-mode .dropdown-content a {
+    color: white;
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* RTL Language Support */
+[lang="ar"] body {
+    direction: rtl;
+    font-family: 'Arial', sans-serif; /* Use an Arabic-supported font */
+}
+
+[lang="ar"] .navbar,
+[lang="ar"] .nav-links,
+[lang="ar"] .right-links {
+    flex-direction: row-reverse;
+}
+
+[lang="ar"] .nav-links a {
+    flex-direction: row-reverse;
+}
+
+[lang="ar"] .animals-grid {
+    direction: ltr; /* Keep grid layout LTR */
+}
+
+[lang="ar"] .info-column,
+[lang="ar"] .info-box,
+[lang="ar"] .animal-card {
+    text-align: right;
+}
+
+

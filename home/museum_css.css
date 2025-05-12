@@ -1,0 +1,138 @@
+/* =========================================
+   Museum Page Specific Styles
+   ========================================= */
+
+/* Extinct Animals Layout */
+.extinct-animals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    width: 100%;}
+
+    @media (min-width: 992px) {
+        .extinct-animals {
+            width: 100%;
+        }
+        
+        .fact-box {
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+
+/* Animal Cards */
+.animal-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.animal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.animal-image-container {
+    position: relative;
+    width: 1200px;
+    height: 1200px;
+    overflow: hidden;
+}
+
+.animal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.animal-image-container:hover .animal-image {
+    transform: scale(1.05);
+}
+
+.animal-info {
+    padding: 25px;
+}
+
+.animal-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #3e2723;
+    transition: color 0.3s;
+}
+
+.animal-info p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    transition: color 0.3s;
+}
+
+/* Info Links */
+.info-link {
+    color: #558b2f;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.info-link:hover {
+    color: #33691e;
+    text-decoration: none;
+}
+
+/* Fun Fact Box */
+.fact-box {
+    background-color: #7b1fa2;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.fact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.fact-box h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #e1bee7;
+}
+
+.fact-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Dark Mode Styles for Museum Page */
+body.dark-mode .animal-card {
+    background-color: #333;
+}
+
+body.dark-mode .animal-title {
+    color: #aed581;
+}
+
+body.dark-mode .animal-info p {
+    color: #ddd;
+}
+
+body.dark-mode .info-link {
+    color: #aed581;
+}
+
+body.dark-mode .info-link:hover {
+    color: #c5e1a5;
+}
+
+body.dark-mode .fact-box {
+    background-color: #6a1b9a;
+}

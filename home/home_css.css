@@ -1,0 +1,151 @@
+/* =========================================
+   Home Page Specific Styles
+   ========================================= */
+
+/* Animals Grid Layout */
+.animals-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+@media (max-width: 900px) {
+    .animals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Info Columns */
+.info-column {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.info-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.info-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #3e2723;
+    transition: color 0.3s;
+}
+
+.info-column p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    transition: color 0.3s;
+}
+
+/* Center Image */
+.center-image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.center-image-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.center-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.center-image-container:hover .center-image {
+    transform: scale(1.05);
+}
+
+/* Additional Info Box */
+.info-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #3e2723;
+    transition: color 0.3s;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    transition: color 0.3s;
+}
+
+/* Review Link */
+.review-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.review-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #558b2f;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.review-link:hover {
+    background-color: #33691e;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.review-link:active {
+    transform: translateY(-1px);
+}
+
+/* Dark Mode Styles for Home Page */
+body.dark-mode .info-column {
+    background-color: #333;
+}
+
+body.dark-mode .info-title {
+    color: #aed581;
+}
+
+body.dark-mode .info-column p {
+    color: #ddd;
+}
+
+body.dark-mode .info-box {
+    background-color: #333;
+}
+
+body.dark-mode .info-subtitle {
+    color: #aed581;
+}
+
+body.dark-mode .info-box p {
+    color: #ddd;
+}
